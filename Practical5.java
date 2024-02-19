@@ -2,7 +2,7 @@ public class Practical5 {
     public static void main(String[] args) {
         
         int n =3; //input number
-        int count = 0;
+        int count = 0; 
         int num = 2; // Start checking from 2
         while (count < n) {
             int factorCount = 0; // Count of factors of num
