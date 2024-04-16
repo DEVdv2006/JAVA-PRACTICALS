@@ -1,11 +1,11 @@
 class  student_info 
-{    int  val=5;
+{    
     public String name;
-    public int enrollmentnum;
-    public void get_info(String name,int enrollnum)
+    public int enrollment_num;
+    public void get_info(String name,int enroll_num)
     {
         this.name=name;
-        this.enrollmentnum=enrollnum;
+        this.enrollment_num=enroll_num;
     }
 
 } 
@@ -39,7 +39,7 @@ class sports extends test
     public void display_info()
     {
         System.out.println("Name "+name);
-        System.out.println("Enrollment number "+enrollmentnum);
+        System.out.println("Enrollment number "+enrollment_num);
         System.out.println("Average of two marks "+calculate_avg_marks());
         System.out.println("Average of two scores "+calculate_avg_score());
     }

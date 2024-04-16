@@ -25,5 +25,8 @@ public class Practical12 {
         constructor_overloading obj1 = new constructor_overloading();
         constructor_overloading obj2=new constructor_overloading("dev");
         constructor_overloading obj3 = new constructor_overloading("darshana",14);
+        System.out.println(obj1.age+""+obj1.name);
+        System.out.println(obj2.age + ""+obj2.name);
+        System.out.println(obj3.age+""+obj3.name);
     }
 }

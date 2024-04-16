@@ -1,0 +1,28 @@
+%%{init: {'theme': 'default'}}%%
+graph TD;
+    subgraph Job Posting Management
+        A(Job Posting Management) -->|Job details| B[Job Posting Process];
+        B -->|Published job posting| C[Applicants];
+        B -->|Stores job details| D[Job Posting Database];
+    end
+    subgraph Applicant Registration and Tracking
+        E(Applicant Registration and Tracking) -->|Applicant info| F[Application Submission Process];
+        F -->|Applicant profile| G[Applicant Database];
+    end
+    subgraph Interview Scheduling and Feedback
+        H(Interview Scheduling and Feedback) -->|Interview details| I[Interview Scheduling Process];
+        I -->|Scheduled interviews| J[HR Department];
+        I -->|Feedback| K[Interview Feedback Process];
+        K -->|Consolidated feedback| J;
+        I -->|Stores interview details| L[Interview Schedule Database];
+        K -->|Stores feedback| M[Interview Feedback Database];
+    end
+    subgraph Offer Generation and Onboarding
+        N(Offer Generation and Onboarding) -->|Candidate acceptance, onboarding details| O[Offer Generation Process];
+        O -->|Offer letter| P[Applicants];
+        O -->|Smooth onboarding| Q[HR Department];
+    end
+    subgraph User Authentication and Authorization
+        R(User Authentication and Authorization) -->|User credentials, user role| S[Authentication Process];
+        S -->|Authenticated and authorized access| T[Users];
+    end
