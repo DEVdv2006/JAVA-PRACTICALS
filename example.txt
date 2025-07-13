@@ -1,0 +1,2 @@
+This is an example text written to the file.
+Java file handling is simple and efficient.
